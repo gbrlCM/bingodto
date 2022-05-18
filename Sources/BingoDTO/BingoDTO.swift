@@ -44,7 +44,7 @@ public struct BingoOutput: Codable {
     }
 }
 
-public enum Theme: Codable {
+public enum Theme: String, Codable {
     case magicPurple
 }
 
