@@ -87,3 +87,16 @@ public struct BingoPatch: Codable {
         self.theme = theme
     }
 }
+
+public struct BingoPreviousMatchOutput: Codable {
+    public var bingo: BingoOutput
+    public var playersResults: [PlayerResults]
+    
+}
+
+public struct PlayerResults: Codable {
+    public var playerId: String
+    public var name: String
+    public var wordsFound: Int
+    public var position: Int
+}
