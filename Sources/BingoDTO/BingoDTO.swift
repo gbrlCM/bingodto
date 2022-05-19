@@ -5,13 +5,15 @@ public struct FeedBingoOutput: Codable {
     public var name: String
     public var keyWords: [String]
     public var wordCount: Int
+    public var theme: Theme
     
-    public init(id: UUID, name: String, keyWords: [String], wordCount: Int) {
+    public init(id: UUID, name: String, keyWords: [String], wordCount: Int, theme: Theme) {
         precondition(keyWords.count == 3)
         self.id = id
         self.name = name
         self.keyWords = keyWords
         self.wordCount = wordCount
+        self.theme = theme
     }
 }
 
