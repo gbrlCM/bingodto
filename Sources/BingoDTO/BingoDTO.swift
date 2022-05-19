@@ -54,17 +54,21 @@ public struct BingoInput: Codable {
     public var words: [String]
     public var description: String?
     public var theme: Theme
+    public var playerId: String
     
     public init(name: String,
                 emoji: String,
                 words: [String],
                 description: String? = nil,
-                theme: Theme) {
+                theme: Theme,
+                playerId: String
+    ) {
         self.name = name
         self.emoji = emoji
         self.words = words
         self.description = description
         self.theme = theme
+        self.playerId = playerId
     }
 }
 
